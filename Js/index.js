@@ -5,7 +5,7 @@ function Inicio() {
     let email = document.getElementById('email').value;
     let phone = document.getElementById('phone').value;
     let age = document.getElementById('age').value;
-    let favoriteGame = document.getElementById('favoriteGame').value;  // Asegúrate de que sea 'Pokemon'
+    let favoriteGame = document.getElementById('favoriteGame').value; 
     let gamingPlatform = document.getElementById('gamingPlatform').value;
     let favoriteGenre = document.getElementById('favoriteGenre').value;
     let gamerTag = document.getElementById('gamerTag').value;
