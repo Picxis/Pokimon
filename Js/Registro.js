@@ -17,14 +17,14 @@ function registrarse() {
         return;
     }
 
-    let usuario = {
+    let array = {
         name: name,
         email: email,
         username: username,
         password: password 
     };
 
-    usuariosRegistrados.push(usuario);
+    usuariosRegistrados.push(array);
 
     alert('Registrado correctamente');
     console.log('Usuario registrado: ', usuariosRegistrados);
