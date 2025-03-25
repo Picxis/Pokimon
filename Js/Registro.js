@@ -26,5 +26,5 @@ function registrarse() {
     alert('Registrado correctamente');
     console.log('Usuario registrado: ', usuariosRegistrados);
 
-    window.location.href = '../View/login.html'
+    location.href = '../View/login.html'
 }
