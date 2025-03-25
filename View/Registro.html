@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Pokimon</title>
+    <title>Registro POKIMON</title>
+    <link rel="stylesheet" href="../Css/login.css"> <!-- Puedes agregar el CSS de login aquí para que se vea igual -->
 </head>
 <body>
     <center>
     <header>
         <h1>BIENVENIDO AL MUNDO POKIMON</h1>
     </header>
-    <div class="contenedor">
+    <div class="container">
         <p>Formulario de registro POKIMON</p>
         <hr>
-        <form method="POST" id="registro" onsubmit="registrarse(event)">
+        <div class="form">
             <label for="name">Name</label>
                 <br>
             <input type="text" id="name" required>
@@ -36,8 +37,10 @@
                 <br>
             <hr>
             <button type="submit" onclick="registrarse()" style="margin: 20px;">Registrar</button>
-        </form>
+        </div>
     </div>
     </center>
+
+    <script src="../Js/Registro.js"></script>
 </body>
 </html>
