@@ -7,6 +7,7 @@ function registrarse() {
 
     if (password !== confirmPassword) {
         alert("Las contraseñas no coinciden. Intenta nuevamente.");
+        return;
     }
 
     alert('Registrado correctamente');
