@@ -1,4 +1,6 @@
-function registrarse() {
+function registrarse(event) {
+    event.preventDefault();
+    
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let username = document.getElementById('username').value;
