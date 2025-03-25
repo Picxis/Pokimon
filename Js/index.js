@@ -5,15 +5,15 @@ function Inicio() {
     let email = document.getElementById('email').value;
     let phone = document.getElementById('phone').value;
     let age = document.getElementById('age').value;
-    let favoriteGame = document.getElementById('favoriteGame').value;
+    let favoriteGame = document.getElementById('favoriteGame').value;  // Asegúrate de que sea 'Pokemon'
     let gamingPlatform = document.getElementById('gamingPlatform').value;
     let favoriteGenre = document.getElementById('favoriteGenre').value;
     let gamerTag = document.getElementById('gamerTag').value;
 
     if (
-        username === 'Rodolfo' && clave === '123456' && email === 'rodolfo@gmail.com' && phone === '1234567890' && age === '18' &&  favoriteGame === 'Pokimon' &&  gamingPlatform === 'PC' &&  favoriteGenre === 'RPG' &&  gamerTag === 'RodolfoGamer' && id === '1'
+        username === 'Rodolfo' && clave === '123456' && email === 'rodolfo@gmail.com' && phone === '1234567890' && age === '18' &&  favoriteGame === 'Pokemon' &&  gamingPlatform === 'PC' &&  favoriteGenre === 'RPG' &&  gamerTag === 'RodolfoGamer' && id === '1' // Corregir 'Pokimon' a 'Pokemon'
     ) {
-        console.log('Hola, bienvenido a Pokimon');
+        console.log('Hola, bienvenido a Pokemon');
         alert('Bienvenido a POKIMON');
     } else {
         alert('Credenciales incorrectas, ingrese nuevamente');
