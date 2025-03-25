@@ -1,7 +1,9 @@
+let usuariosRegistrados = [];
+
 function registrarse() {
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
-    let username = document.getElementById('username').value;
+     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirmPassword').value;
 
@@ -10,6 +12,15 @@ function registrarse() {
         return;
     }
 
+    let usuario = {
+        name: name,
+        email: email,
+        username: username,
+        password: password 
+    };
+
+    usuariosRegistrados.push(usuario);
+
     alert('Registrado correctamente');
-    console.log(name, email, username, password, confirmPassword);
+    console.log('Usuario registrado: ', usuariosRegistrados);
 }
