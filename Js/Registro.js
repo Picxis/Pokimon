@@ -10,6 +10,8 @@ function registrarse() {
     if (password !== confirmPassword) {
         alert("Las contraseñas no coinciden. Intenta nuevamente.");
         return;
+    } else if (name === '' || email === '' || username === '' || password === '' || confirmPassword === '') {
+        alert("Todos los campos son obligatorios. Por favor, rellénalos.");
     }
 
     let usuario = {
@@ -23,4 +25,6 @@ function registrarse() {
 
     alert('Registrado correctamente');
     console.log('Usuario registrado: ', usuariosRegistrados);
+
+    window.location.href = '../View/login.html'
 }
