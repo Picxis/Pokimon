@@ -10,4 +10,5 @@ function registrarse() {
     }
 
     alert('Registrado correctamente');
+    console.log(name, email, username, password, confirmPassword)
 }
