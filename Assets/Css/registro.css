@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Press Start 2P';
-    background: url('/Assets/img/Login.png') no-repeat center fixed;
+    background: url('../img/Login.png') no-repeat center fixed;
     background-size: cover;
     color: #fff;
 }
