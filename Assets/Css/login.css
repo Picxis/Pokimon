@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P';
+    background: url('/Assets/img/Login.png') no-repeat center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.322)
+}
+
+.container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+label {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    font-family: 'Press Start 2P';
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+a {
+    color: #00f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+button {
+    font-family: 'Press Start 2P';
+    background-color: #333;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: #555;
+    border: white 2px solid;
+    background-color: transparent;
+    transition: 0.1s;
+}

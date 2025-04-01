@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro POKIMON</title>
+    <link rel="stylesheet" href="../Assets/Css/registro.css">
+</head>
+<body>
+    <header>
+        <h1>BIENVENIDO AL MUNDO POKIMON</h1>
+    </header>
+    <div class="container">
+        <p>Formulario de registro POKIMON</p>
+        <hr>
+        <div class="form">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" required>
+            
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" required>
+            
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" required>
+            
+            <p>Ya tienes una cuenta? <a href="../View/login.html">inicia aquí</a></p>
+
+            <button type="button" onclick="registrarUsuario()">Registrar</button>
+        </div>
+    </div>
+    <script src="../Js/Registro.js"></script>
+</body>
+</html>
