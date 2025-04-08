@@ -31,4 +31,4 @@ function DatosUser() {
     }
 }
 // Llamamos la funcion para ejecutarla
-DatosUser();
+

@@ -25,4 +25,4 @@ function Inicio() {
         window.location.href = "../View/entrenador.html";
     }
 }
-Inicio();
+
