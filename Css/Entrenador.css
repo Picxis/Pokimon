@@ -78,6 +78,9 @@ body {
 
 #nombre, #apellido {
     margin-right: 8px; /*Espacio entre el nombre y el apellido*/
+    display: inline-block; /*Acomodamos el nombre en linea*/
+    margin-bottom: 50px; /*Espacio inferior*/
+    margin-top: 30px; /*Espacio superior*/
 }
 
 .info p {
@@ -87,7 +90,7 @@ body {
 
 .buttons {
     position: absolute; /*Permite acomodarlos de forma absoluta*/
-    bottom: 40px; /*Espacio entre la parte inferior*/
+    bottom: 70px; /*Espacio entre la parte inferior*/
     right: 30px; /*Espacio entre la margen derecha*/ 
     width: 55%; /*Acomodar botones*/
     text-align: center;
@@ -110,3 +113,13 @@ button {
     background-color: rgba(255, 255, 255, 0.3);/*Fondo gris semitrasparente*/
     transition: 0.5s; /*Cambio suave y no repentino*/
 }
+
+#btnEntrenar:hover {
+    background-color: rgba(85, 180, 85, 0.603);
+}
+
+#btnBatallar:hover {
+    background-color: rgba(214, 52, 52, 0.527);
+}
+
+

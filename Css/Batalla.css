@@ -1,0 +1,106 @@
+/* Importa fuente pixel art (arcade) desde Google Fonts */   
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Eliminación de márgenes y paddings por defecto en todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Press Start 2P'; /* Fuente arcade */
+    background: url(../Assets/img/background.gif); /* Fondo animado */
+    background-size: cover; /* Ajusta el fondo para cubrir toda la pantalla */
+}
+
+/* Estilo del encabezado principal */
+h1 {
+    font-size: 2rem; /* Tamaño de fuente */
+    text-align: center; /* Centra el texto */
+    padding: 20px ; /* Espaciado interno */
+    color: #FFD700; /* Color dorado */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Contenedor principal para los Pokimones */
+.pokimones {
+    display: flex; /* Diseño en flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    margin: auto; /* Centra los pokimones */
+}
+
+/* Estilo para cada tarjeta de Pokimon */
+.pokimon1, .pokimon2, .pokimon3, .pokimon4 {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; 
+    width: 280px; 
+}
+
+.pokimon1:hover, .pokimon2:hover, .pokimon3:hover, .pokimon4:hover {
+    background: rgba(212, 212, 212, 0.7); /* Fondo semitransparente */
+}
+
+/* Bordes para cada Pokimon */
+.pokimon1 { 
+    border: 2px solid #FFD700;
+}
+
+.pokimon2 { 
+    border: 2px solid #FF4500;
+}
+
+.pokimon3 { 
+    border: 2px solid #1E90FF;
+}
+
+.pokimon4 { 
+    border: 2px solid #32CD32;
+}
+
+/* Estilo de las imágenes de los Pokimones */
+.pokimones img {
+    width: 180px; /* Ancho de la imagen */
+    height: 180px; /* Altura de la imagen */
+    border: solid red;
+    border-radius: 100px;
+}
+
+/* Estilo de las listas de características de los Pokimones */
+ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 12px; /* Espaciado inferior */
+    color: #FFD700;
+}
+
+/* Estilo para los títulos dentro de las listas */
+ul li h3 {
+    font-size: 0.8rem; /* Tamaño de fuente */
+    color: #FF0000;
+}
+
+/* Estilo de los botones */
+.btn {
+    background: #FF0000; 
+    color: white;
+    border: none; 
+    padding: 10px 15px; 
+    font-family: 'Press Start 2P';
+    font-size: 0.8rem; 
+    margin-top: 15px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 15px; 
+}
+
+.btn:hover {
+    background-color: #FFD700;
+    color: #FF0000;
+    transition: 0.4s;
+}

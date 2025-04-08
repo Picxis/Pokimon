@@ -11,23 +11,30 @@
     <!--Contenido principal-->
     <div class="container"> 
         <div class="profile"> <!--Perfil del entrenador-->
-            <img src="../Assets/img/PROFILE.png" alt="Entrenador" class="traimg"> <!--Imagen entrenador-->
-            <p">Entrenador: </p> <!--Nombre del entrenador-->
-            <h1">Ash Ketchum</h1> <!--Nombre del entrenador-->
+            <img src="../Assets/img/Profile.gif" alt="Entrenador" class="traimg"> <!--Imagen entrenador-->
+            <p>Entrenador: </p> <!--Nombre del entrenador-->
+            <h1>Rosa</h1> <!--Nombre del entrenador-->
         </div>
         
         <!--Informacion del usuario-->
         <div class="info">
+            <h1 id="nombre">Nombre</h1>
+            <h1 id="apellido">Apellido</h1>
             <p>Nivel: 1</p>
             <p>Calidad: Principiante</p>
             <p>Dinero: $5,000</p>           <!--Caracteristicas-->
             <p>Liga: Bronce</p>
+            <p id="nombreEntrenador"></p>
         </div>
 
         <!--Botones-->
         <div class="buttons">
-            <button class="btn">Seleccionar Entrenador</button> <!--Boton seleccion entrenador-->
-            <button class="btn">Empezar el juego</button> <!--Boton de comienzo-->
+            <button class="btn" id="btnEmpezar">Empezar el juego</button> <!--Boton de comienzo-->
+            <!-- Nuevos botones (ocultos) -->
+        <div class="OpcionesJuego" id="OpcionesJuego" style="display: none;">
+            <button class="btn" id="btnBatallar">Batallar</button>
+            <button class="btn" id="btnEntrenar">Entrenar pokimon</button>
+        </div>
         </div>
     </div>
     <script src="../Js/entrenador.js"></script> <!--Enlace externo JS-->

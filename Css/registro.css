@@ -14,7 +14,6 @@ body {
     background: url('../Assets/img/Register-Login.jpg') no-repeat; /*No repetir fondo*/
     background-size: cover; /*Ajusta la imagen a toda la pantalla*/
     color: #fff;
-    height: 100vh; /*Fijamos la altura en 100 del viewport*/
 }
 
 /*Encabezado*/
