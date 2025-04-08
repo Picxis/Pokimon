@@ -1,0 +1,95 @@
+/*Importa fuente pixel art (arcade)*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*Eliminacion de margenes por defectos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Para que los paddings y borders no influyan en el tamaño*/
+}
+
+body {
+    font-family: 'Press Start 2P';
+    background: url('../Assets/img/Register-Login.jpg') no-repeat; /*No repetir fondo*/
+    background-size: cover; /*Ajusta la imagen a toda la pantalla*/
+    color: #fff;
+    height: 100vh; /*Fijamos la altura en 100 del viewport*/
+}
+
+/*Encabezado*/
+header {
+    text-align: center;
+    padding-top: 30px; /*Espacio en la parte superior y titulo centrado*/
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px #000; /*Sombra negra y tamaño*/
+}
+
+
+/*Fondo (Caja)*/
+.box {
+    background-color: rgba(0, 0, 0, 0.322); /*Fondo negro semitrasparente*/
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 350px; /*Ancho maximo*/
+    margin: 0 auto;/*Centrada horizontalmente*/
+    margin-top: 100px; /*Separar de la parte superior*/
+    text-align: center;
+    backdrop-filter: blur(5px); /*Desenfoque del fondo*/
+}
+
+.box p {
+    margin: 15px 0; /*Espacios de los textos*/
+    font-size: 0.8rem;
+}
+
+.form {
+    margin-bottom: 15px; /*Separar de la parte inferior*/
+    text-align: left; /*Ajustar a la izquierda el texto*/
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+
+input {
+    width: 100%; /*Todo el ancho del contenedor*/
+    padding: 8px;
+    margin-bottom: 5px; /*Separar de la parte inferior*/
+    font-family: 'Press Start 2P'; /*Tipo de letra*/
+    font-size: 0.7rem;
+    background-color: transparent;
+    border: 2px solid white; /*Sin fondo, unicamente borde blanco*/
+    border-radius: 5px;
+    color: white;
+}
+
+a {
+    color: #00f;
+    text-decoration: none; /*Eliminar subrayado*/
+}
+
+a:hover {
+    color: white; /*Al pasar el cursor sobre este se tornara blanco*/
+}
+
+button {
+    font-family: 'Press Start 2P'; /*tipo fuente*/
+    background-color: #333;
+    color: white;
+    border: none; /* sin borde por defecto*/
+    padding: 10px 20px; /*Ancho y alto*/
+    font-size: 0.8rem;
+    margin-top: 10px;/*Separar de la parte superior*/
+    border-radius: 5px;
+    cursor: pointer; /*Al pasar del mouse se hara una manito para que sepan que es clickeable*/
+}
+
+/*Se activara al momento de pasar el mouse*/
+button:hover { 
+    background-color: transparent;/*Fondo trasparente*/
+    border: 2px solid white; /*Borde blanco*/
+}

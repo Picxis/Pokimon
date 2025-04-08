@@ -1,0 +1,66 @@
+/*Importa fuente pixel art (arcade)*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*Eliminacion de margenes por defectos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Para que los paddings y borders no influyan en el tamaño*/
+}
+
+/*Estilos para el cuerpo*/
+body {
+    font-family: 'Press Start 2P';
+    background: url('../Assets/img/Index.png') no-repeat; /*No repetir fondo*/
+    background-size: cover; /*Ajusta la imagen a toda la pantalla*/
+    color: #fff;
+    display: flex; /*Centrar contenido*/
+    justify-content: center;/*Centrar de manera horizontal*/
+    align-items: center;/*Central de manera vertical*/
+    height: 50vh; /*Mitad altura pantalla*/
+}
+
+
+/*Estilos del contenedor principal*/
+.main-container {
+    background-color: rgba(56, 56, 56, 0.7);
+    backdrop-filter: blur(5px); /*Desenfoque al fondo*/
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*Titulo*/
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+ /*Parrafo de bienvenida*/
+p {
+    font-size: 1rem;
+    margin: 20px;
+}
+
+/*Estilo base de los botones*/
+button {
+    font-family: 'Press Start 2P';
+    background-color: #333;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px 20px; /*Ancho y alto*/
+    border-radius: 5px;
+    cursor: pointer; /*Al pasar el mouse sobre este indica que es clickeable*/
+    border: none; /*Elimina cualquier borde por defecto*/
+}
+
+button a {
+    color: white;
+    text-decoration: none; /*Quitar linea del enlace*/
+}
+
+/*Se activara al momento de pasar el mouse*/
+button:hover {
+    border: white 2px solid; /*Borde blanco*/
+    background-color: transparent; /*Fondo trasparente*/
+    transition: 0.5s; /*Cambio suave y no repentino*/
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Entrenador</title>
+    <link rel="stylesheet" href="../Css/Entrenador.css">
+</head>
+<body>
+
+    <!--Contenido principal-->
+    <div class="container"> 
+        <div class="profile"> <!--Perfil del entrenador-->
+            <img src="../Assets/img/PROFILE.png" alt="Entrenador" class="traimg"> <!--Imagen entrenador-->
+            <p">Entrenador: </p> <!--Nombre del entrenador-->
+            <h1">Ash Ketchum</h1> <!--Nombre del entrenador-->
+        </div>
+
+        <div class="info">
+            <!--Añadimos ID para usar en el JS-->
+            <h2 id="nombre">Nombre: </h2> <!--Campo que se llenara con el nombre del jugador mediante un script-->
+            <h2 id="apellido">Apellido: </h2> <!--Campo que se llenara con el apellido del jugador mediante un script-->
+            <p>Nivel: 1</p>
+            <p>Calidad: Principiante</p>
+            <p>Dinero: $5,000</p>           <!--Caracteristicas del jugador-->
+            <p>Liga: Bronce</p>
+            <p id="idEntrenador">ID: </p>
+        </div>
+
+        <!--Botones-->
+        <div class="buttons">
+            <button class="btn">Seleccionar Entrenador</button> <!--Boton seleccion entrenador-->
+            <button class="btn">Empezar el juego</button> <!--Boton de comienzo-->
+        </div>
+    </div>
+    <script src="../Js/entrenador.js"></script> <!--Enlace externo JS-->
+</body>
+</html>

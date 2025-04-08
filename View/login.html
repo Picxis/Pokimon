@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login POKIMON</title>
+    <link rel="stylesheet" href="../Css/login.css">
+</head>
+<body>
+    <!--Encabezado del registro "Bienvenida"-->
+    <header>
+        <h1>BIENVENIDO AL MUNDO POKIMON</h1>
+    </header>
+
+    <!--Contenido principal-->
+    <div class="box">
+        <p>Mí primer juego JavaScript</p> <!--Introduccion-->
+        
+        <!--Contenedores de los campos-->
+        <!--Añadimos ID a los input para usar el JS-->
+        <div class="form">
+            <label for="email">Email</label>  <!--Campo email-->
+            <input type="email" id="email">
+        </div>
+        
+        <div class="form">
+            <label for="password">Password</label> <!--Campo password-->
+            <input type="password" id="password">
+        </div>
+        
+        <p>No tienes cuenta? <a href="../View/Registro.html">Crea una aquí</a></p> <!--Ir al registro si ya tienes cuenta-->
+        
+        <button onclick="Inicio()">Iniciar sesión</button> <!--Boton de inicio (Llama funcion JS)-->
+    </div>
+
+    <script src="../Js/login.js"></script> <!--Enlace externo con el JS-->
+</body>
+</html>

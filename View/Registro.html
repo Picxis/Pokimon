@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro POKIMON</title>
+    <link rel="stylesheet" href="../Css/registro.css">
+</head>
+<body>
+    <!--Encabezado del registro "Bienvenida"-->
+    <header>
+        <h1>BIENVENIDO AL MUNDO POKIMON</h1>
+    </header>
+
+    <!--Contenido principal-->
+    <div class="container">
+        <p>Formulario de registro POKIMON</p> <!--Parrafo-->
+
+        <div class="form">
+            <!--Añadimos ID a los input para usar el JS-->
+            <label for="nombre">Nombre</label>  <!--Campo para el nombre-->
+            <input type="text" id="nombre" required>
+            
+            <label for="apellido">Apellido</label> <!--Campo para el apellido-->
+            <input type="text" id="apellido" required>
+
+            <label for="entrenador">Nombre Entrenador</label> <!--Campo para el nombre del Entrenador-->
+            <input type="text" id="entrenador" required>
+            
+            <label for="email">Email</label> <!--Campo para el email-->
+            <input type="email" id="email" required>
+            
+            <label for="contrasena">Contraseña</label> <!--Campo para la contraseña-->
+            <input type="password" id="contrasena" required>
+            
+            <label for="telefono">Teléfono</label> <!--Campo para el telefono-->
+            <input type="text" id="telefono" required>
+            
+            <label for="direccion">Dirección</label> <!--Campo para la direccion-->
+            <input type="text" id="direccion" required>
+            
+            <p>Ya tienes una cuenta? <a href="../View/login.html">inicia aquí</a></p> <!--Redireccionamiento si ya tienes una cuenta-->
+
+            <button type="button" onclick="registrarUsuario()">Registrar</button> <!--Boton para registrar llamando una funcion-->
+        </div>
+    </div>
+    <script src="../Js/Registro.js"></script> <!--Enlance del archivo externo JS-->
+</body>
+</html>

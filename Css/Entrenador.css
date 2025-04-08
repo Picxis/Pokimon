@@ -1,0 +1,112 @@
+/*Importa fuente pixel art (arcade)*/   
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*Eliminacion de margenes por defectos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos para el cuerpo*/
+body {
+    font-family: 'Press Start 2P'; /*Tipo fuente*/
+    display: flex; /*Permite central el contenido*/
+    justify-content: center;
+    align-items: center;/*Centra el contenido horizontalmente y verticalmente gracias al flex*/
+    height: 100vh; /*Fijamos la altura en 100% del viewport*/
+    background: url(../Assets/img/PerfilFondo.png) no-repeat; /*No repetir la imagen*/
+    background-size: cover; /*Acomoda el tamaño del fondo a la pantalla*/
+}
+
+
+/*Contenedor principal*/
+.container {
+    background-color: rgba(0, 0, 0, 0.452); /*Fondo negro semitrasparente*/
+    box-shadow: 2px 2px 4px #000; 
+    text-shadow: 2px 2px 4px #000;/*Sombras en el texto y el contenedor*/
+    height: 80vh;
+    width: 70%; /*Tamaño de alto en 80% y ancho 70%*/
+    margin-top: 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(5px); /*Desenfoque*/
+    color: white;
+    padding: 20px;
+    position: absolute; /*Posicionamos de manera absoluta*/
+    display: flex; /*Alineamos con el nombre y acomodamos uno al lado del otro*/
+}
+
+.profile {
+    background-color: rgba(255, 255, 255, 0.219); /*Fondo gris semistrasparante*/
+    width: 40%; /*Ocupa el 40% del ancho*/
+    height: 100%; /*Ocupa el 100% de alto*/
+    border-radius: 20px;
+    text-align: center; /*Centra el contenido de forma vertical*/
+    box-shadow: 2px 2px 4px #000; 
+}
+
+/*Parrafo y titulo con espacio en la parte superior y tamaño*/
+.profile p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.profile h1 {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+
+/*Imagen entrenador*/
+.profile img {
+    width: 90%;   /*acomodamos al 90% de ancho la imagen*/
+    height: 80%; /*80% de altura la imagen*/
+    margin-top: 20px; /*20pixeles de espacio de la parte superior*/
+}
+
+.info {
+    width: 55%; /*Ocupara el 55% de ancho para el texto*/
+    padding-left: 20px; /* 20Pixeles para separarse de el margen izquierdo*/
+}
+
+.info h2 {
+    margin-top: 20px; /*Espacio superior*/
+    font-size: 2rem;
+    margin-bottom: 50px; /*Espacio inferior*/
+    display: inline-block; /*Acomodamos el nombre de manera horizontal en linea*/
+}
+
+#nombre, #apellido {
+    margin-right: 8px; /*Espacio entre el nombre y el apellido*/
+}
+
+.info p {
+    font-size: 1.5rem; /*tamaño*/
+    margin-bottom: 50px; /*Espacio inferior*/
+}
+
+.buttons {
+    position: absolute; /*Permite acomodarlos de forma absoluta*/
+    bottom: 40px; /*Espacio entre la parte inferior*/
+    right: 30px; /*Espacio entre la margen derecha*/ 
+    width: 55%; /*Acomodar botones*/
+    text-align: center;
+}
+
+button {
+    font-family: 'Press Start 2P'; /*Tipo letra*/
+    border: none; /*Sin borde por defecto*/
+    padding: 12px; /*espacio interno*/
+    margin: 8px;/*Espacio entre los botones*/
+    background-color: rgba(0, 0, 0, 0.452); /* Fondo negro semitrasparante*/
+    color: white; /*Color de la letra*/
+    border-radius: 20px;
+    width: 45%; /*Ancho de los botones*/
+    cursor: pointer;
+}
+
+/*Se activara al momento de pasar el mouse*/
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);/*Fondo gris semitrasparente*/
+    transition: 0.5s; /*Cambio suave y no repentino*/
+}
