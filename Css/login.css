@@ -1,95 +1,102 @@
-/*Importa fuente pixel art (arcade)*/
+/* Trae una fuente estilo pixel art */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/*Eliminacion de margenes por defectos*/
+/* Quita los márgenes y espacios por defecto */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*Para que los paddings y borders no influyan en el tamaño*/
+    box-sizing: border-box; /* Ajusta el tamaño de los elementos */
 }
 
+/* Fondo y estilo general del cuerpo */
 body {
-    font-family: 'Press Start 2P';
-    background: url('../Assets/img/Register-Login.jpg') no-repeat; /*No repetir fondo*/
-    background-size: cover; /*Ajusta la imagen a toda la pantalla*/
-    color: #fff;
-    height: 100vh; /*Fijamos la altura en 100 del viewport*/
+    font-family: 'Press Start 2P'; /* Fuente pixel art */
+    background: url('../Assets/img/Register-Login.jpg') no-repeat; /* Imagen de fondo */
+    background-size: cover; /* Imagen ocupa toda la pantalla */
+    color: #fff; /* Texto blanco */
+    height: 100vh; /* Altura de toda la pantalla */
 }
 
-/*Encabezado*/
+/* Título principal */
 header {
-    text-align: center;
-    padding-top: 30px; /*Espacio en la parte superior y titulo centrado*/
+    text-align: center; /* Centra el texto */
+    padding-top: 30px; /* Espacio arriba */
 }
 
 h1 {
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 4px #000; /*Sombra negra y tamaño*/
+    font-size: 1.5rem; /* Tamaño del texto */
+    text-shadow: 2px 2px 4px #000; /* Sombra negra */
 }
 
-
-/*Fondo (Caja)*/
+/* Caja del formulario */
 .box {
-    background-color: rgba(0, 0, 0, 0.322); /*Fondo negro semitrasparente*/
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 350px; /*Ancho maximo*/
-    margin: 0 auto;/*Centrada horizontalmente*/
-    margin-top: 100px; /*Separar de la parte superior*/
-    text-align: center;
-    backdrop-filter: blur(5px); /*Desenfoque del fondo*/
+    background-color: rgba(0, 0, 0, 0.322); /* Fondo negro transparente */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 350px; /* Ancho máximo */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 100px; /* Espacio arriba */
+    text-align: center; /* Centra el texto */
+    backdrop-filter: blur(5px); /* Fondo desenfocado */
 }
 
+/* Texto dentro de la caja */
 .box p {
-    margin: 15px 0; /*Espacios de los textos*/
-    font-size: 0.8rem;
+    margin: 15px 0; /* Espacio entre textos */
+    font-size: 0.8rem; /* Tamaño del texto */
 }
 
+/* Formulario */
 .form {
-    margin-bottom: 15px; /*Separar de la parte inferior*/
-    text-align: left; /*Ajustar a la izquierda el texto*/
+    margin-bottom: 15px; /* Espacio abajo */
+    text-align: left; /* Texto alineado a la izquierda */
 }
 
+/* Etiquetas del formulario */
 label {
-    margin-bottom: 5px;
-    font-size: 0.8rem;
+    margin-bottom: 5px; /* Espacio abajo */
+    font-size: 0.8rem; /* Tamaño del texto */
 }
 
+/* Campos de texto */
 input {
-    width: 100%; /*Todo el ancho del contenedor*/
-    padding: 8px;
-    margin-bottom: 5px; /*Separar de la parte inferior*/
-    font-family: 'Press Start 2P'; /*Tipo de letra*/
-    font-size: 0.7rem;
-    background-color: transparent;
-    border: 2px solid white; /*Sin fondo, unicamente borde blanco*/
-    border-radius: 5px;
-    color: white;
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 8px; /* Espacio interno */
+    margin-bottom: 5px; /* Espacio abajo */
+    font-family: 'Press Start 2P'; /* Fuente pixel art */
+    font-size: 0.7rem; /* Tamaño del texto */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    color: white; /* Texto blanco */
 }
 
+/* Enlaces */
 a {
-    color: #00f;
-    text-decoration: none; /*Eliminar subrayado*/
+    color: #00f; /* Azul */
+    text-decoration: none; /* Sin subrayado */
 }
 
+/* Enlace al pasar el mouse */
 a:hover {
-    color: white; /*Al pasar el cursor sobre este se tornara blanco*/
+    color: white; /* Cambia a blanco */
 }
 
+/* Botones */
 button {
-    font-family: 'Press Start 2P'; /*tipo fuente*/
-    background-color: #333;
-    color: white;
-    border: none; /* sin borde por defecto*/
-    padding: 10px 20px; /*Ancho y alto*/
-    font-size: 0.8rem;
-    margin-top: 10px;/*Separar de la parte superior*/
-    border-radius: 5px;
-    cursor: pointer; /*Al pasar del mouse se hara una manito para que sepan que es clickeable*/
+    font-family: 'Press Start 2P'; /* Fuente pixel art */
+    background-color: #333; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Tamaño del botón */
+    font-size: 0.8rem; /* Tamaño del texto */
+    margin-top: 10px; /* Espacio arriba */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
 }
 
-/*Se activara al momento de pasar el mouse*/
+/* Botón al pasar el mouse */
 button:hover { 
-    background-color: transparent;/*Fondo trasparente*/
-    border: 2px solid white; /*Borde blanco*/
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid white; /* Borde blanco */
 }

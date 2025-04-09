@@ -1,0 +1,122 @@
+/* Trae una fuente estilo arcade desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Quita los márgenes y espacios de todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: 'Press Start 2P'; /* Fuente arcade */
+    background: url(../Assets/img/ZonaBatalla.jpg); /* Imagen de fondo */
+    background-size: cover; /* Que cubra toda la pantalla */
+    background-position: center; /* Centrada */
+    min-height: 100vh; /* Altura mínima de la pantalla */
+    color: #fff; /* Texto blanco */
+}
+
+/* Encabezado */
+header {
+    padding: 20px 0; /* Espacio arriba y abajo */
+}
+
+/* Título del encabezado */
+header h1 {
+    font-size: 40px; /* Tamaño del texto */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centrado */
+    border-radius: 10px; /* Bordes redondeados */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Sombra del texto */
+    text-decoration: underline; /* Subrayado */
+    padding: 10px; /* Espacio interno */
+}
+
+/* Zona de batalla */
+.battleZone {
+    display: flex; /* Elementos en fila */
+    justify-content: space-around; /* Espacio entre elementos */
+    height: 70vh; /* Altura */
+    padding: 20px; /* Espacio interno */
+}
+
+/* Contenido del jugador y enemigo */
+.player-content, .enemy-content {
+    display: flex; /* Elementos en fila */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px; /* Espacio abajo */
+}
+
+/* Imágenes */
+img {
+    width: 120px; /* Ancho */
+    height: 120px; /* Alto */
+    margin-top: 0px; /* Sin espacio arriba */
+}
+
+/* Nombres de los pokimons */
+#myPokimonName, #enemyPokimonName {
+    font-size: 16px; /* Tamaño del texto */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centrado */
+    margin-bottom: 10px; /* Espacio abajo */
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    padding: 8px 12px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+    margin-top: 300px; /* Espacio arriba */
+}
+
+/* Imagen del entrenador */
+.trainer img {
+    margin-top: 200px; /* Espacio arriba */
+    width: 200px; /* Ancho */
+    height: 300px; /* Alto */
+}
+
+/* Acciones (botones) */
+.actions {
+    display: flex; /* Elementos en fila */
+    display: inline-block; /* Alineados */
+    margin-left: 50vh; /* Espacio a la izquierda */
+    width: 100%; /* Ancho completo */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Botones */
+button {
+    font-family: 'Press Start 2P'; /* Fuente arcade */
+    padding: 12px 20px; /* Espacio interno */
+    border: 2px solid black; /* Borde negro */
+    border-radius: 8px; /* Bordes redondeados */
+    color: white; /* Texto blanco */
+    cursor: pointer; /* Manito al pasar */
+    margin-bottom: 20px; /* Espacio abajo */
+    font-size: 14px; /* Tamaño del texto */
+    width: 180px; /* Ancho fijo */
+    transition: transform 0.2s; /* Efecto al pasar el cursor */
+}
+
+/* Efecto al pasar el cursor por los botones */
+button:hover {
+    transform: scale(1.05); /* Se agranda un poco */
+}
+
+/* Botón de ataque */
+#btnAttack, #btnAttackEnemy {
+    background-color: #ff0000; /* Rojo */
+}
+
+/* Botón de defensa */
+#btnDefend, #btnDefendEnemy {
+    background-color: #3bc3db; /* Azul */
+}
+
+/* Botón de evolución */
+#btnEvolve, #btnEvolveEnemy {
+    background-color: #ec7b1f; /* Naranja */
+}

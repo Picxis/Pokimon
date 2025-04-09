@@ -1,66 +1,67 @@
-/*Importa fuente pixel art (arcade)*/
+/* Trae una fuente de estilo pixelado */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/*Eliminacion de margenes por defectos*/
+/* Quita los espacios y bordes que vienen por defecto */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*Para que los paddings y borders no influyan en el tamaño*/
+    box-sizing: border-box; /* Hace que los bordes y rellenos no cambien el tamaño */
 }
 
-/*Estilos para el cuerpo*/
+/* Fondo y estilo del cuerpo */
 body {
-    font-family: 'Press Start 2P';
-    background: url('../Assets/img/Index.png') no-repeat; /*No repetir fondo*/
-    background-size: cover; /*Ajusta la imagen a toda la pantalla*/
-    color: #fff;
-    display: flex; /*Centrar contenido*/
-    justify-content: center;/*Centrar de manera horizontal*/
-    align-items: center;/*Central de manera vertical*/
-    height: 50vh; /*Mitad altura pantalla*/
+    font-family: 'Press Start 2P'; /* Usa la fuente pixelada */
+    background: url('../Assets/img/Index.png') no-repeat; /* Imagen de fondo sin repetir */
+    background-size: cover; /* La imagen ocupa toda la pantalla */
+    color: #fff; /* Texto blanco */
+    display: flex; /* Acomoda el contenido en el centro */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 50vh; /* Ocupa la mitad de la pantalla */
 }
 
-
-/*Estilos del contenedor principal*/
+/* Caja principal */
 .main-container {
-    background-color: rgba(56, 56, 56, 0.7);
-    backdrop-filter: blur(5px); /*Desenfoque al fondo*/
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
+    background-color: rgba(56, 56, 56, 0.7); /* Fondo oscuro con transparencia */
+    backdrop-filter: blur(5px); /* Desenfoque detrás */
+    padding: 30px; /* Espacio dentro de la caja */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
 }
 
-/*Titulo*/
+/* Título */
 h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2rem; /* Tamaño grande */
+    margin-bottom: 10px; /* Espacio debajo */
 }
- /*Parrafo de bienvenida*/
+
+/* Texto de bienvenida */
 p {
-    font-size: 1rem;
-    margin: 20px;
+    font-size: 1rem; /* Tamaño normal */
+    margin: 20px; /* Espacio alrededor */
 }
 
-/*Estilo base de los botones*/
+/* Botones */
 button {
-    font-family: 'Press Start 2P';
-    background-color: #333;
-    color: white;
-    font-size: 0.8rem;
-    padding: 10px 20px; /*Ancho y alto*/
-    border-radius: 5px;
-    cursor: pointer; /*Al pasar el mouse sobre este indica que es clickeable*/
-    border: none; /*Elimina cualquier borde por defecto*/
+    font-family: 'Press Start 2P'; /* Fuente pixelada */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    font-size: 0.8rem; /* Tamaño pequeño */
+    padding: 10px 20px; /* Espacio dentro del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    border: none; /* Sin borde */
 }
 
+/* Enlaces dentro de botones */
 button a {
-    color: white;
-    text-decoration: none; /*Quitar linea del enlace*/
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
 }
 
-/*Se activara al momento de pasar el mouse*/
+/* Efecto al pasar el mouse */
 button:hover {
-    border: white 2px solid; /*Borde blanco*/
-    background-color: transparent; /*Fondo trasparente*/
-    transition: 0.5s; /*Cambio suave y no repentino*/
+    border: white 2px solid; /* Borde blanco */
+    background-color: transparent; /* Fondo transparente */
+    transition: 0.5s; /* Cambio suave */
 }

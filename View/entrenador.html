@@ -4,39 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil del Entrenador</title>
-    <link rel="stylesheet" href="../Css/Entrenador.css">
+    <link rel="stylesheet" href="../Css/Entrenador.css"> <!-- Conecta el diseño -->
 </head>
 <body>
 
-    <!--Contenido principal-->
+    <!-- Todo el contenido -->
     <div class="container"> 
-        <div class="profile"> <!--Perfil del entrenador-->
-            <img src="../Assets/img/Profile.gif" alt="Entrenador" class="traimg"> <!--Imagen entrenador-->
-            <p>Entrenador: </p> <!--Nombre del entrenador-->
-            <h1>Rosa</h1> <!--Nombre del entrenador-->
+        <div class="profile"> <!-- Parte del entrenador -->
+            <img src="../Assets/img/Profile.gif" alt="Entrenador" class="traimg"> <!-- Foto del entrenador -->
+            <p>Entrenador: </p>
+            <h1>Rosa</h1> 
         </div>
         
-        <!--Informacion del usuario-->
+        <!-- Datos del usuario -->
         <div class="info">
-            <h1 id="nombre">Nombre</h1>
-            <h1 id="apellido">Apellido</h1>
-            <p>Nivel: 1</p>
-            <p>Calidad: Principiante</p>
-            <p>Dinero: $5,000</p>           <!--Caracteristicas-->
-            <p>Liga: Bronce</p>
+            <h1 id="nombre">Nombre</h1> <!-- Nombre del usuario -->
+            <h1 id="apellido">Apellido</h1> <!-- Apellido del usuario -->
+            <p>Nivel: 1</p> <!-- Nivel del usuario -->
+            <p>Calidad: Principiante</p> <!-- Nivel de experiencia -->
+            <p>Dinero: $5,000</p> <!-- Dinero que tiene -->
+            <p>Liga: Bronce</p> <!-- Liga del usuario -->
             <p id="nombreEntrenador"></p>
         </div>
 
-        <!--Botones-->
+        <!-- Botones -->
         <div class="buttons">
-            <button class="btn" id="btnEmpezar">Empezar el juego</button> <!--Boton de comienzo-->
-            <!-- Nuevos botones (ocultos) -->
+            <button class="btn" id="btnEmpezar">Empezar el juego</button> <!-- Botón para iniciar -->
+            <!-- Más botones que no se ven al inicio -->
         <div class="OpcionesJuego" id="OpcionesJuego" style="display: none;">
-            <button class="btn" id="btnBatallar">Batallar</button>
-            <button class="btn" id="btnEntrenar">Entrenar pokimon</button>
+            <button class="btn" id="btnBatallar">Batallar</button> <!-- Botón para pelear -->
         </div>
         </div>
     </div>
-    <script src="../Js/entrenador.js"></script> <!--Enlace externo JS-->
+    <script src="../Js/entrenador.js"></script>
 </body>
 </html>

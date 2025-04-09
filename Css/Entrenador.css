@@ -1,125 +1,128 @@
-/*Importa fuente pixel art (arcade)*/   
+/* Importa una fuente estilo pixel art */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/*Eliminacion de margenes por defectos*/
+/* Quita los márgenes y espacios por defecto */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Estilos para el cuerpo*/
+/* Estilo para el fondo y el cuerpo */
 body {
-    font-family: 'Press Start 2P'; /*Tipo fuente*/
-    display: flex; /*Permite central el contenido*/
+    font-family: 'Press Start 2P'; /* Letra estilo pixel art */
+    display: flex; /* Centra todo */
     justify-content: center;
-    align-items: center;/*Centra el contenido horizontalmente y verticalmente gracias al flex*/
-    height: 100vh; /*Fijamos la altura en 100% del viewport*/
-    background: url(../Assets/img/PerfilFondo.png) no-repeat; /*No repetir la imagen*/
-    background-size: cover; /*Acomoda el tamaño del fondo a la pantalla*/
+    align-items: center; /* Centra vertical y horizontal */
+    height: 100vh; /* Ocupa toda la pantalla */
+    background: url(../Assets/img/PerfilFondo.png) no-repeat; /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
 }
 
-
-/*Contenedor principal*/
+/* Caja principal */
 .container {
-    background-color: rgba(0, 0, 0, 0.452); /*Fondo negro semitrasparente*/
-    box-shadow: 2px 2px 4px #000; 
-    text-shadow: 2px 2px 4px #000;/*Sombras en el texto y el contenedor*/
-    height: 80vh;
-    width: 70%; /*Tamaño de alto en 80% y ancho 70%*/
-    margin-top: 20px;
-    border-radius: 30px;
-    backdrop-filter: blur(5px); /*Desenfoque*/
-    color: white;
-    padding: 20px;
-    position: absolute; /*Posicionamos de manera absoluta*/
-    display: flex; /*Alineamos con el nombre y acomodamos uno al lado del otro*/
+    background-color: rgba(0, 0, 0, 0.452); /* Fondo oscuro transparente */
+    box-shadow: 2px 2px 4px #000; /* Sombra de la caja */
+    text-shadow: 2px 2px 4px #000; /* Sombra del texto */
+    height: 80vh; /* Alto de la caja */
+    width: 70%; /* Ancho de la caja */
+    margin-top: 20px; /* Espacio arriba */
+    border-radius: 30px; /* Bordes redondeados */
+    backdrop-filter: blur(5px); /* Fondo desenfocado */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espacio interno */
+    position: absolute; /* Posición fija */
+    display: flex; /* Divide en dos partes */
 }
 
+/* Parte del entrenador */
 .profile {
-    background-color: rgba(255, 255, 255, 0.219); /*Fondo gris semistrasparante*/
-    width: 40%; /*Ocupa el 40% del ancho*/
-    height: 100%; /*Ocupa el 100% de alto*/
-    border-radius: 20px;
-    text-align: center; /*Centra el contenido de forma vertical*/
-    box-shadow: 2px 2px 4px #000; 
+    background-color: rgba(255, 255, 255, 0.219); /* Fondo claro transparente */
+    width: 40%; /* Ocupa el 40% del ancho */
+    height: 100%; /* Todo el alto */
+    border-radius: 20px; /* Bordes redondeados */
+    text-align: center; /* Centra el contenido */
+    box-shadow: 2px 2px 4px #000; /* Sombra */
 }
 
-/*Parrafo y titulo con espacio en la parte superior y tamaño*/
+/* Texto dentro del perfil */
 .profile p {
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: 1rem; /* Tamaño pequeño */
+    margin-top: 10px; /* Espacio arriba */
 }
 
 .profile h1 {
-    font-size: 2rem;
-    margin-top: 15px;
+    font-size: 2rem; /* Tamaño grande */
+    margin-top: 15px; /* Espacio arriba */
 }
 
-
-/*Imagen entrenador*/
+/* Imagen del entrenador */
 .profile img {
-    width: 90%;   /*acomodamos al 90% de ancho la imagen*/
-    height: 80%; /*80% de altura la imagen*/
-    margin-top: 20px; /*20pixeles de espacio de la parte superior*/
+    width: 90%; /* Ancho casi completo */
+    height: 80%; /* Alto grande */
+    margin-top: 20px; /* Espacio arriba */
 }
 
+/* Parte de la información */
 .info {
-    width: 55%; /*Ocupara el 55% de ancho para el texto*/
-    padding-left: 20px; /* 20Pixeles para separarse de el margen izquierdo*/
+    width: 55%; /* Más ancho que el perfil */
+    padding-left: 20px; /* Espacio a la izquierda */
 }
 
 .info h2 {
-    margin-top: 20px; /*Espacio superior*/
-    font-size: 2rem;
-    margin-bottom: 50px; /*Espacio inferior*/
-    display: inline-block; /*Acomodamos el nombre de manera horizontal en linea*/
+    margin-top: 20px; /* Espacio arriba */
+    font-size: 2rem; /* Tamaño grande */
+    margin-bottom: 50px; /* Espacio abajo */
+    display: inline-block; /* En línea */
 }
 
+/* Nombre y apellido */
 #nombre, #apellido {
-    margin-right: 8px; /*Espacio entre el nombre y el apellido*/
-    display: inline-block; /*Acomodamos el nombre en linea*/
-    margin-bottom: 50px; /*Espacio inferior*/
-    margin-top: 30px; /*Espacio superior*/
+    margin-right: 8px; /* Espacio entre ellos */
+    display: inline-block; /* En línea */
+    margin-bottom: 50px; /* Espacio abajo */
+    margin-top: 30px; /* Espacio arriba */
 }
 
+/* Texto de la información */
 .info p {
-    font-size: 1.5rem; /*tamaño*/
-    margin-bottom: 50px; /*Espacio inferior*/
+    font-size: 1.5rem; /* Tamaño mediano */
+    margin-bottom: 50px; /* Espacio abajo */
 }
 
+/* Botones */
 .buttons {
-    position: absolute; /*Permite acomodarlos de forma absoluta*/
-    bottom: 70px; /*Espacio entre la parte inferior*/
-    right: 30px; /*Espacio entre la margen derecha*/ 
-    width: 55%; /*Acomodar botones*/
-    text-align: center;
+    position: absolute; /* Posición fija */
+    bottom: 70px; /* Espacio abajo */
+    right: 30px; /* Espacio a la derecha */
+    width: 55%; /* Ancho de los botones */
+    text-align: center; /* Centra los botones */
 }
 
 button {
-    font-family: 'Press Start 2P'; /*Tipo letra*/
-    border: none; /*Sin borde por defecto*/
-    padding: 12px; /*espacio interno*/
-    margin: 8px;/*Espacio entre los botones*/
-    background-color: rgba(0, 0, 0, 0.452); /* Fondo negro semitrasparante*/
-    color: white; /*Color de la letra*/
-    border-radius: 20px;
-    width: 45%; /*Ancho de los botones*/
-    cursor: pointer;
+    font-family: 'Press Start 2P'; /* Letra pixel art */
+    border: none; /* Sin borde */
+    padding: 12px; /* Espacio interno */
+    margin: 8px; /* Espacio entre botones */
+    background-color: rgba(0, 0, 0, 0.452); /* Fondo oscuro transparente */
+    color: white; /* Texto blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    width: 45%; /* Ancho del botón */
+    cursor: pointer; /* Cambia el cursor al pasar */
 }
 
-/*Se activara al momento de pasar el mouse*/
+/* Efecto al pasar el mouse */
 .btn:hover {
-    background-color: rgba(255, 255, 255, 0.3);/*Fondo gris semitrasparente*/
-    transition: 0.5s; /*Cambio suave y no repentino*/
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo claro transparente */
+    transition: 0.5s; /* Cambio suave */
 }
 
+/* Botón de entrenar */
 #btnEntrenar:hover {
-    background-color: rgba(85, 180, 85, 0.603);
+    background-color: rgba(85, 180, 85, 0.603); /* Fondo verde */
 }
 
+/* Botón de batallar */
 #btnBatallar:hover {
-    background-color: rgba(214, 52, 52, 0.527);
+    background-color: rgba(214, 52, 52, 0.527); /* Fondo rojo */
 }
-
-

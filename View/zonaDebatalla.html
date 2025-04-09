@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona de batalla</title>
+    <link rel="stylesheet" href="../Css/zonaDebatalla.css">
+    <style>
+        /* Estilos para las barras de vida */
+        .health-bar-container {
+            width: 100%;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .health-bar {
+            height: 100%;
+            background-color: #4CAF50;
+            border-radius: 10px;
+            transition: width 0.3s ease-in-out;
+        }
+        .health-text {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡A luchar!</h1>
+    </header>
+
+    <div class="battleZone">
+        <!-- Zona de tu pokimon -->
+        <div class="player">
+            <div class="player-content">
+                <div class="trainer">
+                    <img src="../Assets/img/Profile.gif" id="myTrainer">
+                </div>
+                <div class="pokimon" id="myPokimon">
+                    <p id="myPokimonName"></p>
+                    <img src="" id="myPokimonImg">
+                    <!-- Barra de vida para mi Pokimon -->
+                    <div class="health-bar-container">
+                        <div class="health-bar" id="myHealthBar"></div>
+                    </div>
+                    <div class="health-text" id="myHealthText">100/100</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zona del pokimon enemigo -->
+        <div class="enemy">
+            <div class="enemy-content">
+                <div class="pokimonE" id="enemyPokimon">
+                    <p id="enemyPokimonName"></p>
+                    <img src="" id="enemyPokimonImg">
+                    <!-- Barra de vida para el Pokimon enemigo -->
+                    <div class="health-bar-container">
+                        <div class="health-bar" id="enemyHealthBar"></div>
+                    </div>
+                    <div class="health-text" id="enemyHealthText">100/100</div>
+                </div>
+                <div class="trainer">
+                    <img src="../Assets/img/Enemigo.gif" id="enemyTrainer">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="actions">
+        <button id="btnAttack">Atacar</button>
+        <button id="btnDefend">Defender</button>
+        <button id="btnEvolve">Evolucionar</button>
+    </div>
+
+    <script src="../Js/Funciones.js"></script>
+</body>
+</html>

@@ -1,106 +1,108 @@
-/* Importa fuente pixel art (arcade) desde Google Fonts */   
+/* Trae una fuente arcade desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Eliminación de márgenes y paddings por defecto en todos los elementos */
+/* Quita los márgenes y espacios de todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo general del cuerpo de la página */
+/* Fondo y estilo del cuerpo */
 body {
     font-family: 'Press Start 2P'; /* Fuente arcade */
-    background: url(../Assets/img/background.gif); /* Fondo animado */
-    background-size: cover; /* Ajusta el fondo para cubrir toda la pantalla */
+    background: url(../Assets/img/background.gif); /* Imagen de fondo */
+    background-size: cover; /* Que cubra toda la pantalla */
 }
 
-/* Estilo del encabezado principal */
+/* Título principal */
 h1 {
-    font-size: 2rem; /* Tamaño de fuente */
-    text-align: center; /* Centra el texto */
-    padding: 20px ; /* Espaciado interno */
+    font-size: 2rem; /* Tamaño del texto */
+    text-align: center; /* Centrado */
+    padding: 20px; /* Espacio interno */
     color: #FFD700; /* Color dorado */
-    margin-bottom: 20px; /* Espaciado inferior */
+    margin-bottom: 20px; /* Espacio abajo */
 }
 
-/* Contenedor principal para los Pokimones */
+/* Contenedor de los Pokimones */
 .pokimones {
-    display: flex; /* Diseño en flexbox */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    padding: 20px; /* Espaciado interno */
-    margin: auto; /* Centra los pokimones */
+    display: flex; /* Acomoda en fila */
+    justify-content: center; /* Centra horizontalmente */
+    padding: 20px; /* Espacio interno */
+    margin: auto; /* Centra en la página */
 }
 
-/* Estilo para cada tarjeta de Pokimon */
+/* Tarjetas de cada Pokimon */
 .pokimon1, .pokimon2, .pokimon3, .pokimon4 {
-    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro transparente */
     border-radius: 10px; /* Bordes redondeados */
-    padding: 20px; 
-    width: 280px; 
+    padding: 20px; /* Espacio interno */
+    width: 280px; /* Ancho fijo */
 }
 
+/* Cambia el fondo al pasar el mouse */
 .pokimon1:hover, .pokimon2:hover, .pokimon3:hover, .pokimon4:hover {
-    background: rgba(212, 212, 212, 0.7); /* Fondo semitransparente */
+    background: rgba(212, 212, 212, 0.7); /* Fondo claro transparente */
 }
 
-/* Bordes para cada Pokimon */
+/* Bordes de colores para cada Pokimon */
 .pokimon1 { 
-    border: 2px solid #FFD700;
+    border: 2px solid #FFD700; /* Dorado */
 }
 
 .pokimon2 { 
-    border: 2px solid #FF4500;
+    border: 2px solid #FF4500; /* Naranja */
 }
 
 .pokimon3 { 
-    border: 2px solid #1E90FF;
+    border: 2px solid #1E90FF; /* Azul */
 }
 
 .pokimon4 { 
-    border: 2px solid #32CD32;
+    border: 2px solid #32CD32; /* Verde */
 }
 
-/* Estilo de las imágenes de los Pokimones */
+/* Imágenes de los Pokimones */
 .pokimones img {
-    width: 180px; /* Ancho de la imagen */
-    height: 180px; /* Altura de la imagen */
-    border: solid red;
-    border-radius: 100px;
+    width: 180px; /* Ancho */
+    height: 180px; /* Alto */
+    border: solid red; /* Borde rojo */
+    border-radius: 100px; /* Forma circular */
 }
 
-/* Estilo de las listas de características de los Pokimones */
+/* Listas de características */
 ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    margin-top: 20px;
+    list-style: none; /* Sin puntos en la lista */
+    margin-top: 20px; /* Espacio arriba */
 }
 
 ul li {
-    margin-bottom: 12px; /* Espaciado inferior */
-    color: #FFD700;
+    margin-bottom: 12px; /* Espacio abajo */
+    color: #FFD700; /* Texto dorado */
 }
 
-/* Estilo para los títulos dentro de las listas */
+/* Títulos dentro de las listas */
 ul li h3 {
-    font-size: 0.8rem; /* Tamaño de fuente */
-    color: #FF0000;
+    font-size: 0.8rem; /* Texto pequeño */
+    color: #FF0000; /* Rojo */
 }
 
-/* Estilo de los botones */
+/* Botones */
 .btn {
-    background: #FF0000; 
-    color: white;
-    border: none; 
-    padding: 10px 15px; 
-    font-family: 'Press Start 2P';
-    font-size: 0.8rem; 
-    margin-top: 15px;
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    border-radius: 15px; 
+    background: #FF0000; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espacio interno */
+    font-family: 'Press Start 2P'; /* Fuente arcade */
+    font-size: 0.8rem; /* Texto pequeño */
+    margin-top: 15px; /* Espacio arriba */
+    cursor: pointer; /* Cambia el cursor */
+    border-radius: 15px; /* Bordes redondeados */
 }
 
+/* Cambia el color del botón al pasar el mouse */
 .btn:hover {
-    background-color: #FFD700;
-    color: #FF0000;
-    transition: 0.4s;
+    background-color: #FFD700; /* Fondo dorado */
+    color: #FF0000; /* Texto rojo */
+    transition: 0.4s; /* Animación suave */
 }
