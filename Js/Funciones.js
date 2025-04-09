@@ -29,12 +29,42 @@ window.onload = function() {
 // Función para mostrar la información de los Pokimon en la pantalla
 function updatePokimonDisplay() {
     // Cambiamos la imagen y el nombre de nuestro Pokimon
+    // Aseguramos que usamos el mismo path que en el HTML para las imágenes
     document.getElementById('myPokimonImg').src = `../Assets/img/${myPokimon.nombre.toLowerCase()}.gif`;
     document.getElementById('myPokimonName').textContent = isEvolved ? myPokimon.evolucion : myPokimon.nombre;
     
     // Cambiamos la imagen y el nombre del Pokimon enemigo
     document.getElementById('enemyPokimonImg').src = `../Assets/img/${enemyPokimon.nombre.toLowerCase()}.gif`;
     document.getElementById('enemyPokimonName').textContent = enemyPokimon.nombre;
+    
+    // Añadimos manejo de errores para las imágenes
+    document.getElementById('myPokimonImg').onerror = function() {
+        console.error(`No se pudo cargar la imagen: ${this.src}`);
+        // Verificamos si la imagen existe con la primera letra en mayúscula
+        const nombrePokimon = myPokimon.nombre;
+        const nombreCapitalizado = nombrePokimon.charAt(0).toUpperCase() + nombrePokimon.slice(1).toLowerCase();
+        this.src = `../Assets/img/${nombreCapitalizado}.gif`;
+        
+        // Si sigue sin funcionar, intentamos con una imagen por defecto
+        this.onerror = function() {
+            console.error(`Tampoco se pudo cargar la imagen capitalizada: ${this.src}`);
+            this.src = '../Assets/img/default-pokemon.gif';
+        };
+    };
+    
+    document.getElementById('enemyPokimonImg').onerror = function() {
+        console.error(`No se pudo cargar la imagen: ${this.src}`);
+        // Verificamos si la imagen existe con la primera letra en mayúscula
+        const nombrePokimon = enemyPokimon.nombre;
+        const nombreCapitalizado = nombrePokimon.charAt(0).toUpperCase() + nombrePokimon.slice(1).toLowerCase();
+        this.src = `../Assets/img/${nombreCapitalizado}.gif`;
+        
+        // Si sigue sin funcionar, intentamos con una imagen por defecto
+        this.onerror = function() {
+            console.error(`Tampoco se pudo cargar la imagen capitalizada: ${this.src}`);
+            this.src = '../Assets/img/default-pokemon.gif';
+        };
+    };
     
     // Actualizamos las barras de vida
     updateHealthBars();

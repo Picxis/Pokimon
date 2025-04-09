@@ -108,15 +108,35 @@ button:hover {
 
 /* Botón de ataque */
 #btnAttack, #btnAttackEnemy {
-    background-color: #ff0000; /* Rojo */
+    background-color: #ff0000;
 }
 
 /* Botón de defensa */
 #btnDefend, #btnDefendEnemy {
-    background-color: #3bc3db; /* Azul */
+    background-color: #3bc3db;
 }
 
 /* Botón de evolución */
 #btnEvolve, #btnEvolveEnemy {
-    background-color: #ec7b1f; /* Naranja */
+    background-color: #ec7b1f; 
+}
+
+/* Estilos para las barras de vida */
+.health-bar-container {
+    width: 100%;
+    height: 20px;
+    background-color: #e65656;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.health-bar {
+    height: 100%;
+    background-color: #af4c4c;
+    border-radius: 10px;
+    transition: width 0.3s ease-in-out;
+}
+.health-text {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
 }
